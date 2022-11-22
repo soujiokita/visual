@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="title" content="Scathach - Disgrowth">
+  <meta name="description" content="Visualize your discord bots growth into chartable web-app & statistics with ease. Updates hourly">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="sinkaroid" />
+  <meta property="og:url" content="https://scathach.dev">
+  <meta property="og:title" content="Scathach - Disgrowth">
+  <meta property="og:description" content="Visualize your discord bots growth into chartable web-app & statistics with ease. Updates hourly">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/952117487166705747/997947103550656603/sca.webp">
+  <meta name="author" content="Scathach - Disgrowth" />
+  <meta content="#FF00FF" name="theme-color" />
+  <meta content="#FF00FF" name="msapplication-navbutton-color" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" rel="stylesheet">
+  <title>Scathach bot</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica%20Neue">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link href="https://unpkg.com/nprogress@0.2.0/nprogress.css" rel="stylesheet" />
+  <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>Won't working properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app" v-cloak></div>
+  <style>
+   [v-cloak] {
+    display: block;
+    padding: 50px 0;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+[v-cloak]:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #333;
+    animation: spinner 0.6s linear infinite;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+[v-cloak]>* {
+    display: none;
+}
+</style>
+</body>
+
+</html>
